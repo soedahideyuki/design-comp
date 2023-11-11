@@ -21,7 +21,6 @@ nav>a:hover{
 nav>a:active{color: black;}
 /* メイン */
 #main-img{
-  height: 400px;
   width: 100%;
   margin: 10px 0px;
 }
@@ -49,6 +48,7 @@ h2{
 #main-works{
   display: flex;
   list-style: none;
+  padding-inline-start: 0;
 }
 #main-works>li{
   width: 33%;
