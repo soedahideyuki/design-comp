@@ -1,0 +1,62 @@
+/* ヘッダー */
+nav{ text-align: center;}
+nav>a{
+  font-weight: bold;
+  font-size: 34px;
+  text-decoration: none;
+}
+.home{
+  border: solid 1px black;
+  margin: 10px 100px;
+}
+.nav-sub{
+  margin: 10px 20px;
+}
+nav>a:link{color: black;}
+nav>a:visited{color: black;}
+nav>a:hover{
+  color: black;
+  text-decoration: underline;
+}
+nav>a:active{color: black;}
+/* メイン */
+#main-img{
+  height: 400px;
+  width: 100%;
+  margin: 10px 0px;
+}
+h2{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+#profile{
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+}
+#about-img{
+  height: 140px;
+  width: 140px;
+  border-radius: 70px;
+}
+#profile>div>h3{
+  font-size: 24px;
+  margin-top:0;
+  margin-left: 30px;
+}
+#profile>div>ul{font-size: 18px;}
+#main-works{
+  display: flex;
+  list-style: none;
+}
+#main-works>li{
+  width: 33%;
+  margin: 10px;
+  font-size: 18px;
+}
+.works-img{width: 100%;}
+footer{
+  text-align: center;
+  font-size: 18px;
+}
