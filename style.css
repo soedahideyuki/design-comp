@@ -1,3 +1,4 @@
+@media screen and (min-width:768px){
 /* ヘッダー */
 nav{ text-align: center;}
 nav>a{
@@ -59,4 +60,73 @@ h2{
 footer{
   text-align: center;
   font-size: 18px;
+}
+}
+/* スマホ用 */
+@media screen and (max-width:767px){
+header{
+  display: flex;
+  width: 100%;
+}
+nav>a{
+  font-weight: bold;
+  text-decoration: none;
+}
+.home{
+  margin-left: 20px;
+  margin-right: 120px;
+  border: solid 1px black;
+}
+.nav-sub{
+  margin-right: 10px;
+}
+nav>a:link{color: black;}
+nav>a:visited{color: black;}
+nav>a:hover{
+  color: black;
+  text-decoration: underline;
+}
+nav>a:active{color: black;}
+/* メイン */
+#main-img{
+  width: 100%;
+  margin: 10px 0px;
+}
+h2{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+#profile{
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+}
+#about-img{
+  height: 140px;
+  width: 140px;
+  border-radius: 70px;
+}
+#profile>div>h3{
+  font-size: 24px;
+  margin-top:0;
+  margin-left: 30px;
+}
+#profile>div>ul{font-size: 18px;}
+#main-works{
+  list-style: none;
+  padding-inline-start: 0;
+  text-align: center;
+}
+#main-works>li{
+  width: 100%;
+  font-size: 18px;
+}
+.works-img{
+  width: 100%;
+}
+footer{
+  text-align: center;
+  font-size: 18px;
+}
 }
