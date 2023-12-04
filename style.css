@@ -29,9 +29,8 @@ nav>div>a:hover{
 }
 nav>div>a:active{color: black;}
 /* メイン */
-#main-img{
+.main-img{
   width: 100%;
-  margin: 10px 0px;
 }
 h2{
   font-size: 34px;

@@ -6,6 +6,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width-=device-width,initial-scale=1.0">
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
     <header>
@@ -21,9 +24,19 @@
     </header>
     <main>
       <article>
-        <div>
-          <img id="main-img" src="images/main.png" alt="デジタルカメラのアップの写真">
-        </div>
+        <section id="carousel-section">
+          <div class="carousel">
+            <div>
+              <img class="main-img" src="images/main.png" alt="デジタルカメラのアップの写真">
+            </div>
+            <div>
+              <img src="images/main2.png" alt="さまざまな器具" class="main-img">
+            </div>
+            <div>
+              <img src="images/main3.png" alt="夕日とデジタルカメラ" class="main-img">
+            </div>
+          </div>
+        </section>
         <section>
           <h2 id="about">About</h2>
           <div id="profile">
@@ -61,5 +74,9 @@
     <footer>
       <span id="copyright">&copy;MyProfile.All rights reserved.</span>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- slickの読み込み -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
