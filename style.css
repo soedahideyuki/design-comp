@@ -24,9 +24,7 @@ nav>div>a{
 nav>div>a:link{color: black;}
 nav>div>a:visited{color: black;}
 nav>div>a:hover{
-  color: black;
-  text-decoration: underline;
-}
+  color: black;}
 nav>div>a:active{color: black;}
 /* メイン */
 .main-img{
