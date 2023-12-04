@@ -66,6 +66,24 @@ footer{
   text-align: center;
   font-size: 18px;
 }
+#button{
+  display: none;
+  padding: 40px 20px;
+  background-color:black;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#button>a:link{color: white;}
+#button>a:visited{color: white;}
+#button>a:hover{color: white;}
+#button>a:active{color: white;}
+
 }
 /* スマホ用 */
 @media screen and (max-width:767px){
