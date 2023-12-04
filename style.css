@@ -1,25 +1,33 @@
 @media screen and (min-width:768px){
 /* ヘッダー */
-nav{ text-align: center;}
-nav>a{
+nav{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+.nav-div{
+  margin: 0 auto;
+}
+.nav-sub{
+  margin: 0 20px;
+}
+nav>div>a{
   font-weight: bold;
   font-size: 34px;
   text-decoration: none;
 }
 .home{
   border: solid 1px black;
-  margin: 10px 100px;
 }
-.nav-sub{
-  margin: 10px 20px;
-}
-nav>a:link{color: black;}
-nav>a:visited{color: black;}
-nav>a:hover{
+nav>div>a:link{color: black;}
+nav>div>a:visited{color: black;}
+nav>div>a:hover{
   color: black;
   text-decoration: underline;
 }
-nav>a:active{color: black;}
+nav>div>a:active{color: black;}
 /* メイン */
 #main-img{
   width: 100%;
@@ -68,25 +76,34 @@ header{
   display: flex;
   width: 100%;
 }
-nav>a{
+nav{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+    max-width: 767px;
+}
+.nav-div{
+  margin: 0 auto;
+}
+.nav-sub{
+  margin: 0 20px;
+}
+nav>div>a{
   font-weight: bold;
+  font-size: 34px;
   text-decoration: none;
 }
 .home{
-  margin-left: 20px;
-  margin-right: 120px;
   border: solid 1px black;
 }
-.nav-sub{
-  margin-right: 10px;
-}
-nav>a:link{color: black;}
-nav>a:visited{color: black;}
-nav>a:hover{
+nav>div>a:link{color: black;}
+nav>div>a:visited{color: black;}
+nav>div>a:hover{
   color: black;
   text-decoration: underline;
 }
-nav>a:active{color: black;}
+nav>div>a:active{color: black;}
 /* メイン */
 #main-img{
   width: 100%;
