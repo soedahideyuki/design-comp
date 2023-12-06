@@ -1,4 +1,5 @@
 $(function() {
+  // カルーセル
   $('.carousel').slick({
   autoplay: true,
   dots: true,
@@ -7,7 +8,7 @@ $(function() {
   arrows: false,
   fade: true,
 });
-
+// topボタン
 $('div>a').on('mouseover',function(){
   $(this).css('opacity', '0.5');
 });
@@ -23,4 +24,36 @@ if(scrollValue >= 200){
   $('#button').css('display','none')
 }
 });
+
+// リンククリック
+$('a[href^="#"]').on('click',function(){
+  let speed = 500;
+  let href = $(this).attr('href');
+  let target = $(href =="#" || href == "" ? "html" : href)
+  let position = target.offset().top;
+  $('html,body').animate({scrollTop:position},
+    speed, "swing");
+});
+
+// $(window).on('scroll' , function(){
+//   $('#aboutSection').each(function(){
+//     let position = $(this).offset().top;
+//     let scroll = $(window).scrollTop();
+//     if(scroll == position){
+//       $(this).fadein(200);
+  //   };
+  // });
+// 
+// sectionのフェード院
+$(window).on('scroll' , function(){
+  let scrollValue = $(window).scrollTop();
+  $('section').each(function(){
+    let position = $(this).offset().top;
+    if(scrollValue  > position - 200){
+      $(this).addClass('fadein');
+    };
+  });
+});
+
+
 })

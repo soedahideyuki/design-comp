@@ -1,4 +1,5 @@
 @media screen and (min-width:768px){
+
 /* ヘッダー */
 nav{
   display: flex;
@@ -27,6 +28,11 @@ nav>div>a:hover{
   color: black;}
 nav>div>a:active{color: black;}
 /* メイン */
+section{
+  opacity: 0;
+  transition: 1s;
+}
+.fadein{opacity: 1;}
 .main-img{
   width: 100%;
 }
