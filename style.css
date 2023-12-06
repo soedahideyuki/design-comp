@@ -33,6 +33,7 @@ section{
   transition: 1s;
 }
 .fadein{opacity: 1;}
+#carousel-section{opacity: 1;}
 .main-img{
   width: 100%;
 }
