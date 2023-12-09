@@ -55,5 +55,16 @@ $(window).on('scroll' , function(){
   });
 });
 
+// モーダルウィンドウ
+$('#close').on('click',function(){
+  $(this).hide();
+  $('#main-modal').hide(); 
+  $('#back-modal').hide();
+});
+$('img.works-img').on('click', function(){
+  $('#close').show();
+  $('#back-modal').show();
+  $('#main-modal').show().html('<img src='+$(this).attr('src')+'>');
+});
 
 })
